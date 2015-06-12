@@ -19,7 +19,18 @@ package io.realm.examples.intro;
 import io.realm.RealmObject;
 
 public class Dog extends RealmObject {
+
+    private long key;
     private String name;
+    private long age;
+
+    public long getKey() {
+        return key;
+    }
+
+    public void setKey(long key) {
+        this.key = key;
+    }
 
     public String getName() {
         return name;
@@ -28,4 +39,13 @@ public class Dog extends RealmObject {
     public void setName(String name) {
         this.name = name;
     }
+
+    public long getAge() {
+        return age;
+    }
+
+    public void setAge(long age) {
+        this.age = age;
+    }
+
 }
